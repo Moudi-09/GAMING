@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvre des jeux PC classés par année de sortie et retrouve leurs pages officielles.">
+    <title>Catalogue PC | GameVault</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a class="brand" href="index.html">GAME<span>VAULT</span></a>
+            <nav aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#catalogue">Catalogue PC</a></li>
+                    <li><a href="?year=2022">2022</a></li>
+                    <li><a href="?year=2021">2021</a></li>
+                    <li><a href="?year=2015">2015</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="catalogue" class="games">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">GAMEVAULT • CATALOGUE PC</p>
+                    <h1>Les jeux, classés par année.</h1>
+                    <p class="catalogue-intro">Choisis une année ou parcours la sélection, du jeu PC le plus récent au plus ancien.</p>
+                </div>
+
+                <nav id="year-nav" class="year-nav" aria-label="Filtrer les jeux par année"></nav>
+
+                <div class="catalogue-toolbar">
+                    <label class="search-field" for="game-search">
+                        Rechercher un jeu
+                        <input id="game-search" type="search" placeholder="Titre, genre..." autocomplete="off">
+                    </label>
+                    <label class="year-filter" for="year-filter">
+                        Année de sortie
+                        <select id="year-filter">
+                            <option value="">Toutes les années</option>
+                        </select>
+                    </label>
+                    <p id="result-count" class="result-count" aria-live="polite">Chargement du catalogue...</p>
+                </div>
+
+                <div id="games-grid" class="games-list catalogue-grid" aria-live="polite"></div>
+                <p id="load-state" class="load-state" role="status" hidden></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <a class="brand" href="index.html">GAME<span>VAULT</span></a>
+                <p>Un catalogue pour découvrir des jeux PC et retrouver leurs pages officielles.</p>
+            </div>
+            <div>
+                <h2>Années</h2>
+                <ul>
+                    <li><a href="?year=2022">Jeux PC de 2022</a></li>
+                    <li><a href="?year=2021">Jeux PC de 2021</a></li>
+                    <li><a href="?year=2015">Jeux PC de 2015</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">Les liens de téléchargement renvoient vers les plateformes officielles des éditeurs.</p>
+    </footer>
+    <script src="/js/app.js" defer></script>
+</body>
+</html>

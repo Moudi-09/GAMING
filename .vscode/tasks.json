@@ -1,0 +1,13 @@
+{
+    // Démarre l'API ASP.NET Core et le site web
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Lancer GameVault",
+            "type": "shell",
+            "command": "dotnet run --project GameVault.Api --urls http://localhost:5080",
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
